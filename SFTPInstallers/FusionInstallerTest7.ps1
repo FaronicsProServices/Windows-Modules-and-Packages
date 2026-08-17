@@ -114,7 +114,7 @@ try {
     }
 
     Write-Host "Installing $($exeFile.Name) silently..."
-    Start-Process -FilePath $exeFile.FullName -ArgumentList "/type Silent /DisableExternalServices" -Wait
+    Start-Process -FilePath $exeFile.FullName -ArgumentList "/type Silent" -Wait
     Write-Host "Installation completed."
 }
 catch {
